@@ -1,0 +1,107 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+
+    font-family: "Inter";
+    line-height: 150%;
+}
+
+html,
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: var(--grey-900);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.profile-card-container {
+    background-color: var(--grey-800);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.75rem;
+    height: 63.64vh;
+    width: 26.67vw;
+}
+
+.profile__photo {
+    border-radius: 50%;
+    width: 5.5rem;
+    margin: 1rem;
+}
+
+.profile__title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.profile__location {
+    color: var(--green);
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.profile__description {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    width: 79%;
+    height: 46%;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.social-links li {
+    list-style: none;
+    width: 100%;
+    height: 15.6%;
+}
+
+.social-links li button {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    ;
+    cursor: pointer;
+    background-color: var(--grey-700);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.social-links li button:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 11px;
+    text-align: center;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
